@@ -2,6 +2,8 @@ const tabButtons = document.querySelectorAll(".tab-button");
 const tabPanels = document.querySelectorAll(".tab-panel");
 
 function activateTab(tabId) {
+  document.body.dataset.theme = tabId;
+
   tabButtons.forEach((button) => {
     const isActive = button.dataset.tab === tabId;
     button.classList.toggle("is-active", isActive);
