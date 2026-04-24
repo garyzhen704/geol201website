@@ -9,13 +9,17 @@
   <body>
     <div class="site-shell">
       <header class="hero">
-        <p class="eyebrow">GEOL201L Demo Draft</p>
-        <h1>Earth's Greatest Catastrophe: The Siberian Traps</h1>
-        <p class="hero-copy">
-          Rough draft for my Siberian Traps / Permo-Triassic site. Some of
-          these blocks are just placeholders so I can keep the flow in place
-          before I write the full explanations.
-        </p>
+        <div class="hero-meta">
+          <p class="eyebrow">GEOL201L</p>
+          <p class="hero-tag">Siberian Traps Project</p>
+        </div>
+        <div class="hero-copy-block">
+          <h1>Earth&apos;s Greatest Catastrophe</h1>
+          <p class="hero-copy">
+            A class site on the Permian-Triassic extinction, the Siberian
+            Traps, and the collapse and recovery of life at 252 Ma.
+          </p>
+        </div>
       </header>
 
       <nav class="tab-nav" aria-label="Siberian Traps sections">
@@ -34,33 +38,105 @@
         <button class="tab-button" type="button" data-tab="recovery" aria-selected="false">
           Recovery
         </button>
+        <button class="tab-button" type="button" data-tab="references" aria-selected="false">
+          References
+        </button>
       </nav>
 
       <main>
         <section class="tab-panel is-active" id="home" aria-labelledby="home-heading">
           <div class="panel-card panel-card--hero">
             <p class="panel-label">Overview</p>
-            <h2 id="home-heading">The Great Dying at 252 Ma</h2>
+            <h2 id="home-heading">Earth&apos;s Greatest Catastrophe</h2>
             <p class="panel-subtitle">
-              Placeholder opener for the event, the timing, and the overall
-              direction of the page.
+              Welcome to the boundary of the Permian and Triassic periods,
+              about 252 million years ago. This was the time of the
+              &ldquo;Great Dying,&rdquo; the most severe extinction event in
+              Earth&apos;s history.
+            </p>
+            <p class="panel-subtitle">
+              The crisis wiped out roughly 80% to 90% of marine and terrestrial
+              genera and brought the Paleozoic Era to a violent close. The main
+              driver was not an asteroid, but a massive volcanic event from
+              within the Earth: the Siberian Traps.
             </p>
           </div>
 
-          <div class="content-grid">
-            <article class="content-block content-block--lava">
+          <div class="content-grid content-grid--home">
+            <article class="content-block content-block--lava content-block--compact">
               <h3>Boundary Marker</h3>
-              <p>Need a short intro here on the Permian-Triassic boundary.</p>
+              <p>
+                The Permian-Triassic boundary marks the dividing line between
+                the world before the catastrophe and the reorganized Earth that
+                followed.
+              </p>
             </article>
-            <article class="content-block content-block--sulfur">
+            <article class="content-block content-block--sulfur content-block--compact">
               <h3>Core Event</h3>
-              <p>Placeholder for the Siberian Traps as the main trigger.</p>
+              <p>
+                The Siberian Traps were a planetary-scale volcanic outpouring
+                that triggered extreme environmental change across the globe.
+              </p>
             </article>
-            <article class="content-block content-block--ash">
-              <h3>Note to Self</h3>
-              <p>Keep this section brief until I add the real write-up.</p>
+            <article class="content-block content-block--ash content-block--compact">
+              <h3>What This Site Covers</h3>
+              <p>
+                The next tabs move through the scale of the eruptions, the
+                &ldquo;planetary fuel cell&rdquo; mechanism, the extinction
+                itself, and the long recovery that followed.
+              </p>
             </article>
           </div>
+
+          <div class="fact-strip" aria-label="Key facts">
+            <article class="fact-chip">
+              <span class="fact-value">252 Ma</span>
+              <span class="fact-label">Permian-Triassic boundary</span>
+            </article>
+            <article class="fact-chip">
+              <span class="fact-value">80% to 90%</span>
+              <span class="fact-label">Genera lost</span>
+            </article>
+            <article class="fact-chip">
+              <span class="fact-value">Siberian Traps</span>
+              <span class="fact-label">Main trigger</span>
+            </article>
+          </div>
+
+          <section class="timeline-panel" aria-labelledby="home-timeline-heading">
+            <div class="timeline-panel__intro">
+              <p class="panel-label">Timeline View</p>
+              <h3 id="home-timeline-heading">From Boundary Shock to Recovery</h3>
+              <p>
+                This built-in timeline gives the home tab a visual center.
+                It summarizes the story arc before the deeper tab-by-tab
+                sections begin.
+              </p>
+            </div>
+
+            <div class="timeline-rail" aria-label="Permian-Triassic event timeline">
+              <article class="timeline-step timeline-step--ash">
+                <span class="timeline-step__date">Before 252 Ma</span>
+                <h4>Permian World</h4>
+                <p>Stable Paleozoic ecosystems dominated land and sea before the crisis broke that balance.</p>
+              </article>
+              <article class="timeline-step timeline-step--lava">
+                <span class="timeline-step__date">252 Ma</span>
+                <h4>Siberian Eruptions</h4>
+                <p>Flood-basalt eruptions spread across Siberia and injected extreme energy into the Earth system.</p>
+              </article>
+              <article class="timeline-step timeline-step--sulfur">
+                <span class="timeline-step__date">Boundary Crisis</span>
+                <h4>Environmental Collapse</h4>
+                <p>Warming, acidification, and oxygen-poor oceans pushed the biosphere into the Great Dying.</p>
+              </article>
+              <article class="timeline-step timeline-step--ash">
+                <span class="timeline-step__date">Early Triassic</span>
+                <h4>Slow Recovery</h4>
+                <p>Earth did not rebound quickly. Survivors rebuilt ecosystems over a long unstable recovery.</p>
+              </article>
+            </div>
+          </section>
         </section>
 
         <section class="tab-panel" id="traps" aria-labelledby="traps-heading" hidden>
@@ -165,6 +241,55 @@
               <h3>Image Placeholder</h3>
               <p>Expected file: <code>images/lystrosaurus-fossil.jpg</code></p>
               <p>Search later: <code>Lystrosaurus fossil reconstruction museum</code></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="references" aria-labelledby="references-heading" hidden>
+          <div class="panel-card">
+            <p class="panel-label">Sources</p>
+            <h2 id="references-heading">References</h2>
+            <p class="panel-subtitle">
+              Core course sources used to build the site content. Future manual
+              images and diagrams should also be cited here.
+            </p>
+          </div>
+
+          <div class="content-grid">
+            <article class="content-block content-block--lava">
+              <h3>Primary Chapter</h3>
+              <p>
+                <strong>Chapter 17</strong> —
+                <em>Planetary Evolution: The Importance of Catastrophes and the
+                Question of Directionality</em>
+              </p>
+              <p>
+                Main chapter for the Siberian Traps, the Permian-Triassic
+                extinction, and the idea of catastrophe changing planetary
+                evolution.
+              </p>
+            </article>
+
+            <article class="content-block content-block--sulfur">
+              <h3>Supporting Chapters</h3>
+              <p>
+                <strong>Chapter 15</strong> — planetary fuel cell / mechanism
+              </p>
+              <p><strong>Chapter 14</strong> — extinction and biological loss</p>
+              <p><strong>Chapter 10</strong> — Pangea and Lystrosaurus context</p>
+            </article>
+
+            <article class="content-block content-block--ash">
+              <h3>Source Material</h3>
+              <p><code>HabitableEchapt1.pdf</code></p>
+              <p>
+                <code>How to Build a Habitable Planet</code> by Charles
+                Langmuir and Wally Broecker
+              </p>
+              <p>
+                These are the course/book sources the website content is drawn
+                from. Planning docs are not listed as references.
+              </p>
             </article>
           </div>
         </section>
