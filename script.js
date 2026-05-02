@@ -1,5 +1,6 @@
 const tabButtons = document.querySelectorAll(".tab-button");
 const tabPanels = document.querySelectorAll(".tab-panel");
+const fallbackImages = document.querySelectorAll("img[data-fallback-image]");
 
 function activateTab(tabId) {
   document.body.dataset.theme = tabId;
@@ -21,6 +22,20 @@ tabButtons.forEach((button) => {
   button.addEventListener("click", () => {
     activateTab(button.dataset.tab);
   });
+});
+
+fallbackImages.forEach((image) => {
+  const frame = image.closest(".source-image");
+
+  function updateImageState() {
+    const isLoaded = image.complete && image.naturalWidth > 0;
+    frame.classList.toggle("is-loaded", isLoaded);
+    frame.classList.toggle("is-missing", !isLoaded);
+  }
+
+  image.addEventListener("load", updateImageState);
+  image.addEventListener("error", updateImageState);
+  updateImageState();
 });
 
 activateTab("home");

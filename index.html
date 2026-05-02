@@ -90,6 +90,21 @@
           </article>
         </div>
 
+        <figure class="source-image source-image--wide">
+          <img
+            src="images/permian-triassic-boundary.jpg"
+            alt="Permian seafloor diorama with marine life"
+            data-fallback-image
+          />
+          <div class="source-image__fallback" aria-hidden="true">
+            <span>Boundary image</span>
+          </div>
+          <figcaption>
+            A Permian seafloor scene gives visual context for the marine
+            ecosystems disrupted at the boundary.
+          </figcaption>
+        </figure>
+
         <div class="fact-strip" aria-label="Key facts">
           <article class="fact-chip">
             <span class="fact-value">252 Ma</span>
@@ -152,6 +167,44 @@
             a huge region of Pangea.
           </p>
         </div>
+
+        <section class="traps-visual-strip" aria-label="Siberian Traps environmental context">
+          <figure class="source-image traps-context-card">
+            <img
+              src="images/putorana-plateau-basalt.jpg"
+              alt="Putorana Plateau basalt landscape in Siberia"
+              data-fallback-image
+            />
+            <div class="source-image__fallback" aria-hidden="true">
+              <span>Basalt plateau</span>
+            </div>
+            <figcaption>
+              <strong>Basalt Plateau Landscape</strong>
+              <span>
+                The Putorana Plateau gives a modern visual sense of the broad,
+                layered basalt terrain tied to the Siberian Traps province.
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="source-image traps-context-card traps-context-card--eruption">
+            <img
+              src="images/fissure-eruption-context.jpg"
+              alt="Fissure eruption with lava fountains at night"
+              data-fallback-image
+            />
+            <div class="source-image__fallback" aria-hidden="true">
+              <span>Fissure eruption</span>
+            </div>
+            <figcaption>
+              <strong>Fissure-Style Eruption</strong>
+              <span>
+                A fissure eruption analog shows why flood basalts spread out
+                across land instead of building one central volcanic cone.
+              </span>
+            </figcaption>
+          </figure>
+        </section>
 
         <div class="content-grid content-grid--compact">
           <article class="content-block content-block--lava content-block--compact">
@@ -227,7 +280,7 @@
           </div>
 
           <div class="image-slot" aria-label="Siberian Traps map placeholder">
-            <span class="image-slot__tag">Image placeholder</span>
+            <span class="image-slot__tag">Map figure</span>
             <img class="image-slot__frame" src="images/siberian-traps-map.jpg"
               alt="Map of the Siberian Traps flood-basalt province" />
             <p class="image-slot__title">Regional flood-basalt map</p>
@@ -262,6 +315,16 @@
 
           <div class="fuel-cell-diagram" aria-label="Planetary fuel cell process">
             <article class="fuel-node fuel-node--source">
+              <figure class="source-image source-image--thumb">
+                <img
+                  src="images/magma-intrusion.jpg"
+                  alt="Magma intrusion into sedimentary crust"
+                  data-fallback-image
+                />
+                <div class="source-image__fallback" aria-hidden="true">
+                  <span>Magma intrusion</span>
+                </div>
+              </figure>
               <span class="fuel-node__number">01</span>
               <h4>Magma Intrusion</h4>
               <p>Dikes and sills pushed hot magma into the sedimentary crust.</p>
@@ -273,18 +336,48 @@
             </div>
 
             <article class="fuel-node fuel-node--sediment">
+              <figure class="source-image source-image--thumb">
+                <img
+                  src="images/coal-sediment-cooking.jpg"
+                  alt="Coal-rich sediment heated by magma"
+                  data-fallback-image
+                />
+                <div class="source-image__fallback" aria-hidden="true">
+                  <span>Crustal cooking</span>
+                </div>
+              </figure>
               <span class="fuel-node__number">02</span>
               <h4>Crustal Cooking</h4>
               <p>Coal-rich and carbonate-rich layers heated until carbon was released.</p>
             </article>
 
             <article class="fuel-node fuel-node--gas">
+              <figure class="source-image source-image--thumb">
+                <img
+                  src="images/greenhouse-gas-release.jpg"
+                  alt="Greenhouse gas release from volcanic sediments"
+                  data-fallback-image
+                />
+                <div class="source-image__fallback" aria-hidden="true">
+                  <span>Gas pulse</span>
+                </div>
+              </figure>
               <span class="fuel-node__number">03</span>
               <h4>Gas Pulse</h4>
               <p>CO<sub>2</sub> and methane entered the atmosphere in huge amounts.</p>
             </article>
 
             <article class="fuel-node fuel-node--ocean">
+              <figure class="source-image source-image--thumb">
+                <img
+                  src="images/ocean-acidification-anoxia.jpg"
+                  alt="Ocean acidification and low-oxygen marine stress"
+                  data-fallback-image
+                />
+                <div class="source-image__fallback" aria-hidden="true">
+                  <span>Ocean stress</span>
+                </div>
+              </figure>
               <span class="fuel-node__number">04</span>
               <h4>Ocean Stress</h4>
               <p>Warming, acidification, and low oxygen made marine ecosystems unstable.</p>
@@ -378,12 +471,20 @@
         </section>
 
         <section class="specimen-panel" aria-labelledby="trilobite-heading">
-          <div class="specimen-visual" aria-hidden="true">
+          <figure class="source-image source-image--specimen specimen-visual">
+            <img
+              src="images/trilobite-fossil.jpg"
+              alt="Trilobite fossil specimen"
+              data-fallback-image
+            />
+            <div class="source-image__fallback" aria-hidden="true">
+              <span>Trilobite fossil</span>
+            </div>
             <span class="specimen-oval specimen-oval--outer"></span>
             <span class="specimen-oval specimen-oval--middle"></span>
             <span class="specimen-oval specimen-oval--inner"></span>
             <span class="specimen-spine"></span>
-          </div>
+          </figure>
           <div class="specimen-copy">
             <p class="panel-label">Fossil Marker</p>
             <h3 id="trilobite-heading">The Final Trilobites</h3>
@@ -446,12 +547,20 @@
           </div>
         </section>
 
-        <section class="survivor-grid" aria-label="Recovery species comparison">
-          <article class="survivor-card survivor-card--loss">
-            <div class="survivor-card__visual survivor-card__visual--leaf" aria-hidden="true">
-              <span></span>
-            </div>
-            <p class="panel-label">Loss</p>
+          <section class="survivor-grid" aria-label="Recovery species comparison">
+            <article class="survivor-card survivor-card--loss">
+              <figure class="source-image survivor-card__visual survivor-card__visual--leaf">
+                <img
+                  src="images/glossopteris-fossil.jpg"
+                  alt="Glossopteris fossil leaf"
+                  data-fallback-image
+                />
+                <div class="source-image__fallback" aria-hidden="true">
+                  <span>Glossopteris</span>
+                </div>
+                <span></span>
+              </figure>
+              <p class="panel-label">Loss</p>
             <h3>Glossopteris</h3>
             <p>
               Glossopteris forests dominated much of the southern hemisphere
@@ -460,13 +569,21 @@
             </p>
           </article>
 
-          <article class="survivor-card survivor-card--survivor">
-            <div class="survivor-card__visual survivor-card__visual--track" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <p class="panel-label">Survivor</p>
+            <article class="survivor-card survivor-card--survivor">
+              <figure class="source-image survivor-card__visual survivor-card__visual--track">
+                <img
+                  src="images/lystrosaurus-fossil.jpg"
+                  alt="Lystrosaurus fossil or reconstruction"
+                  data-fallback-image
+                />
+                <div class="source-image__fallback" aria-hidden="true">
+                  <span>Lystrosaurus</span>
+                </div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </figure>
+              <p class="panel-label">Survivor</p>
             <h3>Lystrosaurus</h3>
             <p>
               Lystrosaurus survived the extinction and became common in the
@@ -536,6 +653,49 @@
             <p class="panel-label">Image References</p>
             <h3 id="image-reference-heading">Figures Used on This Site</h3>
             <article class="image-reference-item">
+              <strong>Permian seafloor diorama</strong>
+              <p>
+                James St. John, <em>Diorama of a Permian seafloor</em>,
+                Wikimedia Commons / Flickr, CC BY 2.0.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Diorama_of_a_Permian_seafloor_-_corals,_brachiopods,_coiled_cephalopod,_algae,_gastropod_(44791272745).jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Putorana Plateau landscape</strong>
+              <p>
+                jxandreani, <em>Plato Putorana 03</em>, Wikimedia Commons /
+                Flickr, CC BY 2.0.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Plato_Putorana_03.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Fissure eruption visual analog</strong>
+              <p>
+                United States Geological Survey, <em>Kilauea eastern rift zone
+                fissure eruption May 2018</em>, Wikimedia Commons, public
+                domain.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Kilauea_eastern_rift_zone_fissure_eruption_May_2018.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
               <strong>Siberian Traps map</strong>
               <p>
                 Reichow et al. (2009), <em>The timing and extent of the
@@ -549,6 +709,105 @@
                 rel="noreferrer"
               >
                 View figure source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Magma intrusion photo</strong>
+              <p>
+                James St. John, <em>Dike in metatuffs</em>, Wikimedia
+                Commons / Flickr, CC BY 2.0.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Dike_in_metatuffs_(Cranberry_Island_Series,_Upper_Silurian,_424_Ma;_Seawall_Beach,_Mt._Desert_Island,_Maine,_USA)_2.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Coal seam photo</strong>
+              <p>
+                Kenneth Carpenter, <em>Belt coal seam</em>, Wikimedia
+                Commons, CC BY-SA 4.0.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Belt_coal_seam.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Volcanic plume image</strong>
+              <p>
+                European Space Agency, <em>Smoke plume from Popocatepetl
+                volcano</em>, Wikimedia Commons / Copernicus Sentinel data,
+                attribution required.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Smoke_plume_from_Popocat%C3%A9petl_volcano_ESA25208640.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Ocean acidification shell image</strong>
+              <p>
+                NOAA, <em>A pteropod shell is shown dissolving over time</em>,
+                Wikimedia Commons, public domain.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:A_pteropod_shell_is_shown_dissolving_over_time.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Trilobite fossil photo</strong>
+              <p>
+                Ytrottier, <em>Crotalocephalus Trottier</em>, Wikimedia
+                Commons, CC BY-SA 3.0 / GFDL.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Crotalocephalus_Trottier.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Glossopteris fossil leaf</strong>
+              <p>
+                James St. John, <em>Glossopteris sp. fossil leaf</em>,
+                Wikimedia Commons / Flickr, CC BY 2.0.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Glossopteris_sp._(fossil_leaf)_(Permian;_Antarctica)_1_(49063572172)_(cropped).jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
+              </a>
+            </article>
+            <article class="image-reference-item">
+              <strong>Lystrosaurus mounted skeleton</strong>
+              <p>
+                Jon Augier, Museums Victoria, <em>Lystrosaurus georgi mounted
+                skeleton</em>, Wikimedia Commons, CC BY 4.0.
+              </p>
+              <a
+                href="https://commons.wikimedia.org/wiki/File:Lystrosaurus_georgi_mounted_skeleton.jpg"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View image source
               </a>
             </article>
           </section>
