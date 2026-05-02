@@ -750,9 +750,7 @@ img.image-slot__frame {
 
 .fuel-cell-panel {
   display: grid;
-  grid-template-columns: minmax(320px, 0.62fr) minmax(0, 1.38fr);
-  align-items: start;
-  gap: 0.85rem;
+  gap: 1rem;
   padding: 1rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -766,23 +764,25 @@ img.image-slot__frame {
 
 .fuel-cell-copy {
   display: grid;
-  align-content: start;
-  gap: 0.65rem;
+  grid-template-columns: minmax(0, 0.58fr) minmax(280px, 0.42fr);
+  gap: 0.55rem 1rem;
+  align-items: end;
 }
 
 .fuel-cell-copy h3 {
   margin: 0;
-  font-size: clamp(1.65rem, 2.7vw, 2.05rem);
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
   line-height: 1.05;
 }
 
 .fuel-cell-copy p {
   margin: 0;
   color: var(--muted);
+  max-width: 38rem;
 }
 
 .fuel-cell-copy .panel-label {
-  grid-column: auto;
+  grid-column: 1 / -1;
 }
 
 .fuel-cell-diagram {
@@ -1625,4 +1625,5 @@ img.image-slot__frame {
     min-height: 0;
     aspect-ratio: 16 / 9;
   }
+
 }
