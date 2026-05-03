@@ -738,6 +738,23 @@ img.image-slot__frame {
   background: rgba(15, 13, 12, 0.72);
 }
 
+.source-image figcaption strong,
+.image-slot__caption strong {
+  color: var(--text);
+}
+
+.source-image__caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.45rem 0.55rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.15;
+  background: linear-gradient(180deg, transparent, rgba(13, 11, 10, 0.9) 32%);
+}
+
 .source-image--thumb {
   min-height: 0;
   aspect-ratio: 16 / 10;
